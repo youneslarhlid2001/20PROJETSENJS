@@ -1,7 +1,7 @@
 body{
     margin: 50px;
     padding: 0;
-    background: #3c3c3c;
+    background: rgb(253, 246, 232);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -11,12 +11,15 @@ body{
 
 .box-login{
     flex-shrink: 0;
-    background: #fff;
-    border-radius: 5px;
+    background: rgb(255, 249, 238);
+    border : 2px solid rgb(250, 165, 9);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgb(255, 223, 163);
 }
 
 h2{
     text-align: center;
+    color: rgb(250, 165, 9);
 }
 
 .form-groupe{
