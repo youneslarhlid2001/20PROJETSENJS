@@ -1,0 +1,119 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(90deg, #f9f9f9, #ff5858);
+    font-family: "Comic sans MS";
+    
+}
+
+h1{
+    text-align:center;
+    font-size: 7vw;
+    margin: 20px 0px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 20px;
+}
+
+.affichage{
+    margin: 50px auto;
+    width: 70%;
+    max-width: 900px;
+    min-width:500px;
+    display: flex;
+    background:transparent;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.bloc{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.bloc p:nth-child(1){
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.bloc:nth-child(1){
+    border-right: 2px solid #333;
+}
+
+.container-btns{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 900px;
+    min-width:500px;
+    display: flex;
+    justify-content: center;
+    
+}
+.btn {
+    margin-right: 2px;
+    display: block;
+    padding: 18px;
+    font-size: 25px;
+    width: 200px;
+    cursor: pointer;
+        font-family: "Comic sans MS";
+}
+
+.b1{
+    background : transparent;
+    border : 2px solid #117a65;
+    border-radius : 8px;
+    transition: all 0.6s;
+}
+.b2 {
+    background: transparent;
+    border: 2px solid #ff1f1f;
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+.b3 {
+    background: transparent;
+    border: 2px solid #1f36ff;
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+
+.b1:hover{
+    background: #117a65;
+    color: #fff;
+}
+
+.b2:hover {
+    background: #ff1f1f;
+    color: #fff;
+}
+
+.b3:hover {
+    background: #1f36ff;
+    color: #fff;
+}
+
+.affichageT{
+    font-size: 5vw;
+    font-family: "Comic sans MS";
+}
+
+.affichageR{
+    font-size: 5vw;
+    font-family: "Comic sans MS";
+}
