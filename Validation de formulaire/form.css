@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Gill Sans",sans-serif;
 }
 
 .box-login{
@@ -60,6 +60,7 @@ input{
 
 input:focus{
     border: 2px solid rgb(250, 165, 9);
+    background: rgb(255, 235, 197);
 }
 
 .icone-verif{
