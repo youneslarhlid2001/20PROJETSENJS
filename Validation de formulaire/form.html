@@ -10,24 +10,24 @@
 </head>
 <body>
     <div class="box-login">
-        <h2>Inscrivez vous</h2>
+        <h2>Inscrivez-vous</h2>
 
         <form>
             <div class="form-groupe">
                 <label for="utilisateur">Nom d'utilisateur</label>
-                <input type="text" id="utilisateur" placeholder="Nom d'utilisateur">
+                <input type="text" id="utilisateur" placeholder="Nom d'utilisateur" required>
                 <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
                 <span class="message-alerte">Choisissez un pseudo entre 3 et 24 caractères</span>
             </div>
             <div class="form-groupe">
                 <label for="email">Entrez votre e-mail</label>
-                <input type="email" id="email" placeholder="e-mail@example.fr">
+                <input type="email" id="email" placeholder="e-mail@example.fr" required>
                 <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
                 <span class="message-alerte">Rentrez un e-mail valide</span>
             </div>
             <div class="form-groupe">
                 <label for="mdp">Mot de passe</label>
-                <input type="password" id="mdp" placeholder="****************">
+                <input type="password" id="mdp" placeholder="****************" required>
                 <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
                 <span class="message-alerte">Un symbole, une lettre minuscule, un chiffre</span>
                 <div class="ligne">
@@ -38,7 +38,7 @@
             </div>
             <div class="form-groupe">
                 <label for="mdpConf">Confirmez le mot de passe</label>
-                <input type="password" id="mdpconf" placeholder="****************">
+                <input type="password" id="mdpconf" placeholder="****************" required>
                 <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
             </div>
             <button type="submit">Création du compte</button>
