@@ -10,8 +10,8 @@ var audio = new Audio('son1.mp3');
 
 let checkInterval = false;
 let pause = false;
-let tempsInitial = 1800;
-let tempsRepos =300;
+let tempsInitial = 65;
+let tempsRepos =30;
 let nbDeCycles = 0;
 cycles.innerText = `Le nombre de cycles est : ${nbDeCycles}`;
 
@@ -40,8 +40,8 @@ btnDepart.addEventListener('click', () => {
                 audio.pause();
                 couleurTravail_30s.style.background = 'transparent';
                 couleurRepos_30s.style.background = 'transparent';
-                tempsInitial = 1800;
-                tempsRepos = 300;
+                tempsInitial = 65;
+                tempsRepos = 30;
                 nbDeCycles++;
                 cycles.innerText = `Le nombre de cycles est : ${nbDeCycles}`;
                 affichageDuTravail.innerText = `${Math.trunc(tempsInitial / 60)} : ${(tempsInitial % 60) < 10 ? `0${tempsInitial % 60}` : `${tempsInitial % 60}`}`;
@@ -67,8 +67,8 @@ btnDepart.addEventListener('click', () => {
             audio.pause();
             clearInterval(timer);
             checkInterval = false;
-            tempsInitial = 1800;
-            tempsRepos = 300;
+            tempsInitial = 65;
+            tempsRepos = 30;
             affichageDuTravail.innerText = `${Math.trunc(tempsInitial / 60)} : ${(tempsInitial % 60) < 10 ? `0${tempsInitial % 60}` : `${tempsInitial % 60}`}`;
             affichageDuRepos.innerText = `${Math.trunc(tempsRepos / 60)} : ${(tempsRepos % 60) < 10 ? `0${tempsRepos % 60}` : `${tempsRepos % 60}`}`;
             btnStop.innerText = 'Stop';
@@ -92,8 +92,3 @@ btnStop.addEventListener('click', () => {
     }
     pause = !pause;
 })
-
-
-// cycles.addEventListener('click', () => {
-//     audio.pause();
-// })

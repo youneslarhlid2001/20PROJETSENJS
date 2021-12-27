@@ -12,9 +12,9 @@ body{
 .box-login{
     flex-shrink: 0;
     background: rgb(255, 249, 238);
-    border : 2px solid rgb(250, 165, 9);
+    border : 1px solid rgb(250, 165, 9);
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 5px rgb(255, 223, 163);
+    box-shadow: 3px 5px 15px -5px rgb(255, 223, 163);
 }
 
 h2{
@@ -92,6 +92,7 @@ button{
     font-size: 20px;
     cursor: pointer;
     transition: all 0.5s;
+    color : white
 }
 
 button:hover{
