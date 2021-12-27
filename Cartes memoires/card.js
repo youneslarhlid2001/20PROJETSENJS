@@ -5,10 +5,39 @@ let premiereCarte, secondeCarte;
 let verouillage = false;
 let i = 0;
 const btnReplay = document.querySelector('button');
-const faces = document.querySelectorAll('.face')
+const faces = document.querySelectorAll('.face');
+
+
+
+function replay() {
+    // premiereCarte.removeEventListener('click', retourneCarte);
+    // secondeCarte.removeEventListener('click', retourneCarte);
+    // premiereCarte.childNodes[1].classList.remove('active');
+    // secondeCarte.childNodes[1].classList.remove('active');
+    cartes.forEach(carte => {
+    carte.childNodes[1].classList.remove('active');
+    })
+    // verouillage = true;
+    play();
+}
+
+btnReplay.addEventListener('click', replay);
+
+
+
+
+
+
+
+
+
+
+
 
 function play() {
-
+    faces.forEach(face => {
+    face.style.transform = 'rotateY(180deg)';
+    })
 
     cartes.forEach(carte => {
         carte.addEventListener('click', retourneCarte);
@@ -60,4 +89,5 @@ function play() {
 }
 
 play();
+
 

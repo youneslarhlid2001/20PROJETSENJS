@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background : linear-gradient(to right, #b993D6,#8CA6DB)
+    background: linear-gradient(77deg, rgba(127, 2, 255, 1) 0%, rgba(100, 170, 218, 1) 100%);
 }
 
 .grille{
@@ -15,15 +15,17 @@ body {
     grid-template: repeat(3,200px) / repeat(4,200px);
     width: 800px;
     height: 600px;
-    margin: 75px auto 0;
+    margin: 100px auto 0;
 }
 
 .carte{
-    background-color: rgba(0, 195, 255, 0.151);
-    border : 1px solid rgba(131, 107, 236, 0.521);
+    background-color: rgba(117, 186, 243, 0.267);
+    border : 1px solid rgba(153, 140, 211, 0.192);
+    border-radius : 3px;
     perspective : 1000px;
     margin : 5px;
-    box-shadow: 7px 7px 7px -5px rgba(118, 26, 238, 0.555)
+    box-shadow: 7px 7px 7px -5px rgba(118, 26, 238, 0.555);
+    cursor : pointer;
 }
 
 .double-face{
@@ -60,9 +62,39 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 80px;
+    color : rgba(74, 37, 161, 0.726);
 }
 
 .active{
     transform : rotateY(180deg);
     backface-visibility: hidden;
+}
+
+
+
+button {
+    background-image: linear-gradient(to right, #b652f0 0%, #5499c2 51%, #9d00ff 100%)
+}
+
+button {
+    margin: 20px 35vw;
+    padding: 25px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: 0 solid #333;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    width : 30%;
+    
+}
+
+button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
