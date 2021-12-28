@@ -95,14 +95,14 @@ h2{
 li{
     padding: 10px 20px;
     text-align: justify;
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 10px;
     color: rgba(255, 255, 255, 0.767);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .link-infos{
        text-align: justify;
-       font-size: 15px;
+       font-size: 18px;
        color: rgba(255, 255, 255, 0.767);
 }
 
