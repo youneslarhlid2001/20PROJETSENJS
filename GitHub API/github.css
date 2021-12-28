@@ -1,0 +1,111 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: radial-gradient(circle, rgba(0, 112, 244, 1) 20%, rgba(90, 26, 190, 1) 66%);
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size : 4vw;
+    color : #f1f1f1c2;
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+    font-family:'Segoe UI', Tahoma,Geneva,Verdana,sans-serif;
+}
+
+form, .affichage{
+    margin: 0 auto;
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+    outline:none;
+    border: 1px solid rgb(106, 50, 238);
+    border-radius: 10px;
+    color: rgb(247, 247, 247);
+    background : rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+::placeholder{
+    color: rgba(67, 13, 231, 0.438);
+    text-align: center;
+}
+
+input:focus::placeholder{
+    color : transparent;
+}
+input:focus{
+    background: rgba(192, 152, 245, 0.418);
+    border: 1px solid rgb(175, 152, 228);
+}
+
+.affichage{
+    display: flex;
+    justify-content: center;
+}
+
+.carte{
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin-top: 110px;
+    border : 1px solid rgba(69, 21, 245, 0.459);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 6px 34px 6px #421379;
+}
+
+.avatar{
+    height: 160px;
+    width: 160px;
+    border-radius: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background : #000;
+    border: 1px solid rgba(183, 121, 235, 0.849);
+}
+
+h2{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.767);
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.cont-infos{
+    border-top: 3px dashed rgba(109, 40, 238, 0.473);
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+li{
+    padding: 10px 20px;
+    text-align: justify;
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.767);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link-infos{
+       text-align: justify;
+       font-size: 15px;
+       color: rgba(255, 255, 255, 0.767);
+}
+
+li:nth-child(1){
+    margin-top: 15px;
+}

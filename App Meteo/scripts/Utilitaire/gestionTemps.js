@@ -4,7 +4,7 @@ const joursSemaine = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi
 let ajd = new Date();
 let options = {weekday: 'long'};
 let jourActuel = ajd.toLocaleDateString('fr-FR', options);
-// console.log(jourActuel, ajd);
+console.log(jourActuel, ajd);
 
 jourActuel = jourActuel.charAt(0).toUpperCase() + jourActuel.slice(1);
 
