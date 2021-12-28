@@ -10,10 +10,6 @@ const faces = document.querySelectorAll('.face');
 
 
 function replay() {
-    // premiereCarte.removeEventListener('click', retourneCarte);
-    // secondeCarte.removeEventListener('click', retourneCarte);
-    // premiereCarte.childNodes[1].classList.remove('active');
-    // secondeCarte.childNodes[1].classList.remove('active');
     cartes.forEach(carte => {
     carte.childNodes[1].classList.remove('active');
     })
