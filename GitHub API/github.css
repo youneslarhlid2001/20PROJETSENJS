@@ -34,7 +34,7 @@ input{
     border: 1px solid rgb(106, 50, 238);
     border-radius: 10px;
     color: rgb(247, 247, 247);
-    background : rgba(255, 255, 255, 0.671);
+    background : rgba(255, 255, 255, 0.884);
     transition: all 0.5s;
 }
 ::placeholder{
@@ -87,7 +87,7 @@ h2{
 }
 
 .cont-infos{
-    border-top: 3px dashed rgba(109, 40, 238, 0.473);
+    border-top: 4px dashed rgba(109, 40, 238, 0.473);
     margin-top: 20px;
     list-style-type: none;
 }
