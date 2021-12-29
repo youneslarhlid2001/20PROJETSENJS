@@ -6,11 +6,13 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-right: 15px;
 }
 
 button{
     padding: 12px;
     font-size: 25px;
+    margin-right: 15px;
 }
 
 h1{
