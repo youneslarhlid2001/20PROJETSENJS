@@ -13,4 +13,6 @@ formInscription.addEventListener('submit', (e) => {
         formInscription.reset();
         formInscription.classList.toggle('apparition');
     })
+
+    window.open('./conn.html')
 })

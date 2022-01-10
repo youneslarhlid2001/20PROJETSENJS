@@ -14,4 +14,5 @@ formConnection.addEventListener('submit', (e) => {
         formConnection.reset();
         formConnection.classList.toggle('apparition');
     })
+    window.open('https://github.com/youneslarhlid2001/20PROJETSENJS/tree/master/Authentification')
 }) 
