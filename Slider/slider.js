@@ -49,3 +49,26 @@ function slidePrecedente() {
         }
     }
 }
+
+
+document.addEventListener('keydown', keyPressed);
+function keyPressed(e) {
+    if (e.keyCode === 37) {
+        slidePrecedente();
+    }
+    else if (e.keyCode === 39) {
+        slideSuivante();
+    }
+}
+
+cercles.forEach(cercle => {
+    cercle.addEventListener('click', function () {
+        for (i = 0; i < cercles.length; i++){
+            cercles[i].classList.remove('active-cercle');
+        }
+        this.classList.add('active-cercle');
+        imgs[index].classList.remove('active');
+        index = this.getAttribute('data-click')-1;
+        imgs[index].classList.add('active');
+    })
+})
