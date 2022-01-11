@@ -4,9 +4,16 @@ let carteRetournee = false;
 let premiereCarte, secondeCarte;
 let verouillage = false;
 let i = 0;
-const btnReplay = document.querySelector('button');
+let score = 0;
+let faute = 0;
+const btnReplay = document.querySelector('.replay');
+const btnResult = document.querySelector('.result');
 const faces = document.querySelectorAll('.face');
 
+btnResult.addEventListener('click', () => {
+    score++;
+    alert(`Le score est : ${score} et le nombre de faute est : ${faute}`);
+})
 
 
 function replay() {
@@ -14,9 +21,9 @@ function replay() {
     carte.childNodes[1].classList.remove('active');
     })
     // verouillage = true;
+    faute = 0;
     play();
 }
-
 btnReplay.addEventListener('click', replay);
 
 
@@ -59,7 +66,6 @@ function play() {
     
     }
 
-
     function correspondance() {
         if (premiereCarte.getAttribute('data-attr') === secondeCarte.getAttribute('data-attr')) {
             premiereCarte.removeEventListener('click', retourneCarte);
@@ -69,8 +75,8 @@ function play() {
             setTimeout(() => {
                 premiereCarte.childNodes[1].classList.remove('active');
                 secondeCarte.childNodes[1].classList.remove('active');
-
                 verouillage = false;
+                faute++;
             }, 1500)
         }
     }
@@ -80,8 +86,10 @@ function play() {
             let randomPos = Math.floor(Math.random() * 12);
             card.style.order = randomPos;
         })
+
     }
     aleatoire();
+    
 }
 
 play();
