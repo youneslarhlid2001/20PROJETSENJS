@@ -58,3 +58,35 @@ muteBtn.addEventListener('click', () => {
     }
 })
 
+
+let rect = barreOrange.getBoundingClientRect();
+let largeur = rect.width;
+
+barreOrange.addEventListener('click', (e) => {
+
+    let x = e.clientX - rect.left;
+
+    let widthPercent = ((x*100/largeur));
+    console.log(widthPercent);
+
+    let durationVideo = video.duration;
+
+    // position en seconde par rapport au pourcentage
+    video.currentTime = durationVideo * (widthPercent / 100);
+
+})
+
+window.addEventListener('resize', () => {
+    let rect = barreOrange.getBoundingClientRect();
+    let largeur = rect.width;
+
+})
+
+
+video.addEventListener('dblclick', () => {
+    video.requestFullscreen();
+})
+fullScreen.addEventListener('click', () => {
+    video.requestFullscreen();
+})
+
