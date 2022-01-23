@@ -1,0 +1,62 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #1489cc9d,#2b32b2a8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 80px;
+}
+
+.container{
+    background: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    width: 900px;
+    max-width: 90%;
+    margin: 100px auto 0;
+    color: white;
+    box-shadow: 5px 2px 38px 11px #000000;
+}
+
+.phraseAEcrire{
+    margin: 20px 10px;
+    font-size: 25px;
+}
+
+.phrase-test{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #333;
+    width: 100%;
+    resize: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition : all 0.3s;
+    
+}
+
+.phrase-test:focus{
+    border: 2px solid #aea8ff;
+}
+
+.correct {
+    color: green;
+}
+ê
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
